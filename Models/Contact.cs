@@ -7,10 +7,18 @@ namespace WebApIContacts.Models
 		[Key]
 		public int Id { get; set; }
 		[Required]
-		public string UserName { get; set; }
+		public string? UserName { get; set; }
 		[Required]
-		public EmailAddressAttribute email { get; set; }
+		public string? FirtsName { get; set; }
 		[Required]
-		public byte[] Picture { get; set; }
+		
+		public string? LastName { get; set; }
+		[Required]
+		public string? email { get; set; }
+		[Required]
+		
+		public string? Rol { get; set; }
+		[Required]
+		public byte[]? Picture { get; set; }
     }
 }
